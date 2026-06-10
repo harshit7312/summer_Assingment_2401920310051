@@ -1,6 +1,7 @@
 
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -8,6 +9,7 @@ using namespace std;
 class Solution {
 public:
     int strStr(string haystack, string needle) {
-        return haystack.find(needle);
+        size_t pos = haystack.find(needle);
+        return pos == string::npos ? -1 : static_cast<int>(pos);
     }
 };
