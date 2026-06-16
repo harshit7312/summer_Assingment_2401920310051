@@ -28,7 +28,7 @@ public:
         }
 
        
-        while(fast != NULL) {
+        while(fast != nullptr) {
             fast = fast->next;
             slow = slow->next;
         }
